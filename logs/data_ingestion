@@ -1,3 +1,6 @@
 2025-03-14 00:33:13,885 - data_ingestion - DEBUG - Data loaded from https://raw.githubusercontent.com/JanvitaReddy11/Practice-ML-Pipeline/refs/heads/main/spam.csv
 2025-03-14 00:33:13,893 - data_ingestion - DEBUG - Data preprocessing completed
 2025-03-14 00:33:13,974 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
+2025-03-14 02:42:02,816 - data_ingestion - DEBUG - Data loaded from https://raw.githubusercontent.com/JanvitaReddy11/Practice-ML-Pipeline/refs/heads/main/spam.csv
+2025-03-14 02:42:02,823 - data_ingestion - DEBUG - Data preprocessing completed
+2025-03-14 02:42:02,872 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
