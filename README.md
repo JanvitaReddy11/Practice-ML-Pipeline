@@ -24,7 +24,7 @@ Data Ingestion: Loads and preprocesses the dataset.
 
 Data Preprocessing: Removes stopwords, applies stemming, and tokenizes text.
 
-Feature Engineering: Extracts features using TF-IDF or other vectorization techniques.
+Feature Engineering: Extracts features using TF-IDF vectorization technique.
 
 Model Training: Trains a Random Forest classifier using the processed data.
 
