@@ -94,10 +94,22 @@ def save_model(model, file_path: str) -> None:
     except Exception as e:
         logger.error('Error occurred while saving the model: %s', e)
         raise
+def load_params(params_path: str) -> dict:
+    try:
+        with open(params_path, 'r') as file:  
+            params = yaml.safe_load(file)
+        logger.debug('Parameters retrieved from %s', params_path)
+        return params
+    except FileNotFoundError:
+        logger.error('File not found: %s', params_path)  
+        return {}  
+    except yaml.YAMLError as e:
+        logger.error('Error parsing YAML file: %s', e) 
+        return {}
 
 def main():
     try:
-        #params = load_params('params.yaml')['model_building']
+        #params = load_params('params.yaml')['model_training']
         params = {'n_estimators' :25,'random_state':2}
         train_data = load_data('./data/processed/train_tfidf.csv')
         X_train = train_data.iloc[:, :-1].values
